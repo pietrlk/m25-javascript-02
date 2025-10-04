@@ -10,9 +10,13 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         /* selecionando somente um elemnto com base a tag dele */
-        p{
+        p {
             font-size: medium;
             color: blue;
+        }
+        /* configuração especial para o paragrafo que esta na seção 02 mas é filho direto */
+        #secao-02 > p {
+            color: red;
         }
     </style>
 </head>
@@ -22,6 +26,16 @@
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam possimus amet aperiam dolorum consectetur minus, accusantium nesciunt enim corrupti sed nisi quos officia? Accusantium, magni totam. Aperiam repellat ipsum nulla.
             </p>
+        </section>
+        <section id="secao-02">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem voluptatem dolores quam saepe ut laboriosam harum aliquid, quia, maxime praesentium reprehenderit sequi facere expedita mollitia eveniet adipisci possimus beatae natus!
+            </p>
+            <section>
+                <p>
+                    teste   
+                </p>
+            </section>
         </section>
     </main>
 </body>
