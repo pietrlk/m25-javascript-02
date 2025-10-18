@@ -1,0 +1,124 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #004080;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  float: left;
+}
+
+.menu ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #0073e6;
+  font-weight: bold;
+  border-radius: 8px;
+  margin: 0 5px;
+}
+
+/* Primeiro e último item com cor diferente */
+.menu ul li:first-child a {
+  background-color: #0073e6;
+}
+
+.menu ul li:last-child a {
+  background-color: #0073e6;
+}
+
+/* Pseudo-classe hover */
+.menu ul li a:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section > h2 {
+  padding-left: 10px;
+  color: blue;
+}
+
+/* Irmão direto (h4 após h2) */
+h2 + h4 {
+  color: rgb(0, 117, 153);
+  padding-left: 10px;
+}
+
+/* Primeiro parágrafo de cada seção */
+section > p:first-child {
+  font-weight: bold;
+  color: #004080;
+}
+
+/* Irmão direto e gerais */
+h2 + p {
+  margin-left: 10px;
+  background-color: aqua;
+}
+
+h2 ~ p {
+  margin-left: 5px;
+  background-color: #eef5ff;
+}
+
+/* Irmãos gerais após h2 (imagens) */
+h2 ~ img {
+  border: 2px solid #004080;
+  border-radius: 8px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+aside {
+  background-color: #eef5ff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+aside h3 {
+  margin-top: 0;
+}
+
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9em;
+}
