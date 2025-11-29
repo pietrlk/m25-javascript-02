@@ -1,16 +1,22 @@
 {
   "produtos": [
     {
-      "id": 1,
-      "descricao": "teste",
-      "saldo": "1",
-      "preco": "1"
+      "id": "1",
+      "descricao": "Item novo",
+      "saldo": 50,
+      "preco": 150
     },
     {
-      "id": 2,
+      "id": "2",
+      "descricao": "teste2",
+      "saldo": 10,
+      "preco": 20
+    },
+    {
+      "id": "3",
       "descricao": "teste",
-      "saldo": "2",
-      "preco": "5"
+      "saldo": 3,
+      "preco": 123
     }
   ]
 }
